@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Coffee</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:linear-gradient(135deg,#FFF8F2,#FFF1F5,#FFF8F2);
+            overflow-x:hidden;
+        }
+
+        .hero-title{
+            font-family:'Playfair Display',serif;
+        }
+
+        .flower{
+            position:absolute;
+            font-size:60px;
+            animation:float 5s ease-in-out infinite;
+        }
+
+        @keyframes float{
+
+            0%{transform:translateY(0px);}
+            50%{transform:translateY(-20px);}
+            100%{transform:translateY(0px);}
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="fixed top-0 left-0 w-full bg-white/70 backdrop-blur-xl shadow-sm z-50">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-8">
+
+<h1 class="hero-title text-4xl font-bold text-[#5C3A21]">
+
+🌸 Blooming Coffee
+
+</h1>
+
+<ul class="hidden md:flex gap-10 text-gray-700 font-medium">
+
+<li><a href="#home" class="hover:text-pink-500 transition">Home</a></li>
+
+<li><a href="#about" class="hover:text-pink-500 transition">About</a></li>
+
+<li><a href="#menu" class="hover:text-pink-500 transition">Menu</a></li>
+
+<li><a href="#gallery" class="hover:text-pink-500 transition">Gallery</a></li>
+
+<li><a href="#contact" class="hover:text-pink-500 transition">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section id="home" class="min-h-screen flex items-center">
+
+<div class="flower top-40 left-10">🌸</div>
+
+<div class="flower bottom-20 left-1/2">🌷</div>
+
+<div class="flower top-24 right-16">🌼</div>
+
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center px-8 pt-20">
+
+<div>
+
+<p class="uppercase tracking-[4px] text-pink-500 font-semibold">
+
+Welcome to Blooming Coffee
+
+</p>
+
+<h1 class="hero-title text-6xl lg:text-7xl font-bold text-[#4B2E1F] leading-tight mt-4">
+
+Bloom in
+
+<span class="text-pink-500">
+
+Every Sip
+
+</span>
+
+</h1>
+
+<p class="text-gray-600 text-lg leading-9 mt-8">
+
+Discover handcrafted coffee inspired by blooming gardens.
+Every cup is brewed with premium beans, delicate floral notes,
+and the warmth of nature.
+
+</p>
+
+<div class="mt-10 flex gap-5">
+
+<a href="#menu"
+
+class="bg-[#6F4E37] text-white px-8 py-4 rounded-full shadow-xl hover:scale-105 duration-300">
+
+Explore Menu
+
+</a>
+
+<a href="#contact"
+
+class="border-2 border-[#6F4E37] text-[#6F4E37] px-8 py-4 rounded-full hover:bg-[#6F4E37] hover:text-white duration-300">
+
+Book a Table
+
+</a>
+
+</div>
+
+</div>
+
+<div class="relative">
+
+<div class="absolute -top-6 -left-6 w-28 h-28 bg-pink-200 rounded-full blur-3xl"></div>
+
+<div class="absolute bottom-0 right-0 w-36 h-36 bg-yellow-100 rounded-full blur-3xl"></div>
+
+<img src="images/image.png"
+
+class="relative rounded-[40px] shadow-2xl hover:scale-105 duration-500">
+
+</div>
+
+</div>
+
+</section>
+<!-- About Section -->
+
+<section id="about" class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Image -->
+
+            <div>
+
+                <img src="images/about.webp"
+                class="rounded-[35px] shadow-2xl w-full">
+
+            </div>
+
+            <!-- Right Content -->
+
+            <div>
+
+                <span class="text-pink-500 uppercase tracking-[3px] font-semibold">
+                    About Us
+                </span>
+
+                <h2 class="hero-title text-5xl font-bold text-[#4B2E1F] mt-4">
+
+                    Every Cup Tells
+                    <br>
+                    A Blooming Story
+
+                </h2>
+
+                <p class="text-gray-600 leading-8 mt-8">
+
+                    At Blooming Coffee, we believe coffee should be more than
+                    just a drink.
+
+                    Inspired by blooming gardens, every cup is crafted with
+                    premium coffee beans, delicate floral flavors, and love.
+
+                    Our café is a peaceful place where every sip brings warmth,
+                    freshness, and happiness.
+
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 mt-10">
+
+                    <div class="bg-pink-50 p-6 rounded-3xl shadow">
+
+                        <h3 class="text-3xl font-bold text-[#6F4E37]">
+
+                            20+
+
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Signature Drinks
+
+                        </p>
+
+                    </div>
+
+                    <div class="bg-pink-50 p-6 rounded-3xl shadow">
+
+                        <h3 class="text-3xl font-bold text-[#6F4E37]">
+
+                            1000+
+
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Happy Customers
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Signature Drinks -->
+
+<section id="menu" class="py-24 bg-[#FFF8F2]"></section>
+
+<div class="max-w-7xl mx-auto px-8">
+
+<h2 class="hero-title text-5xl text-center font-bold text-[#4B2E1F]">
+
+Our Signature Drinks
+
+</h2>
+
+<p class="text-center text-gray-500 mt-4 mb-14">
+
+Freshly brewed with flowers and premium coffee beans.
+
+</p>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- Card 1 -->
+
+<div class="bg-white rounded-[30px] overflow-hidden shadow-xl hover:-translate-y-3 duration-300">
+
+<img src="images/rose.jpg" class="w-full h-72 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Rose Latte
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+A creamy latte infused with delicate rose flavors.
+
+</p>
+
+<div class="mt-4 text-yellow-500 text-xl">
+
+★★★★★
+
+</div>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-2xl font-bold text-[#6F4E37]">
+
+Rs.850
+
+</span>
+
+<button onclick="openPopup('Rose Latte')" class="bg-[#6F4E37] text-white px-5 py-2 rounded-full hover:bg-[#8A6048]">
+
+Order
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 2 -->
+
+<div class="bg-white rounded-[30px] overflow-hidden shadow-xl hover:-translate-y-3 duration-300">
+
+<img src="images/lavender.jpg" class="w-full h-72 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Lavender Cappuccino
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+A smooth cappuccino with a floral lavender aroma.
+
+</p>
+
+<div class="mt-4 text-yellow-500 text-xl">
+
+★★★★★
+
+</div>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-2xl font-bold text-[#6F4E37]">
+
+Rs.950
+
+</span>
+
+<button onclick="openPopup('Lavender Cappuccino')"  class="bg-[#6F4E37] text-white px-5 py-2 rounded-full hover:bg-[#8A6048]">
+
+Order
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card 3 -->
+
+<div class="bg-white rounded-[30px] overflow-hidden shadow-xl hover:-translate-y-3 duration-300">
+
+<img src="images/mocha.jpg" class="w-full h-72 object-cover">
+
+<div class="p-6">
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Floral Mocha
+
+</h3>
+
+<p class="text-gray-500 mt-3">
+
+Rich chocolate mocha blended with floral sweetness.
+
+</p>
+
+<div class="mt-4 text-yellow-500 text-xl">
+
+★★★★★
+
+</div>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-2xl font-bold text-[#6F4E37]">
+
+Rs.1100
+
+</span>
+
+<button onclick="openPopup('Floral Mocha')" class="bg-[#6F4E37] text-white px-5 py-2 rounded-full hover:bg-[#8A6048]">
+
+Order
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Why Choose Us -->
+
+<section class="py-24 bg-white">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<h2 class="hero-title text-5xl font-bold text-center text-[#4B2E1F]">
+
+Why Choose Blooming Coffee
+
+</h2>
+
+<p class="text-center text-gray-500 mt-5 mb-14">
+
+Every cup is made with passion, quality, and nature's finest ingredients.
+
+</p>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-[#FFF8F2] p-10 rounded-[30px] shadow-lg text-center hover:-translate-y-3 duration-300">
+
+<div class="text-6xl mb-5">
+🌿
+</div>
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Premium Beans
+
+</h3>
+
+<p class="mt-4 text-gray-600 leading-8">
+
+We source only high-quality coffee beans to deliver a rich and smooth taste in every cup.
+
+</p>
+
+</div>
+
+<div class="bg-[#FFF8F2] p-10 rounded-[30px] shadow-lg text-center hover:-translate-y-3 duration-300">
+
+<div class="text-6xl mb-5">
+☕
+</div>
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Fresh Brewing
+
+</h3>
+
+<p class="mt-4 text-gray-600 leading-8">
+
+Every drink is freshly brewed with care to ensure the perfect aroma and flavor.
+
+</p>
+
+</div>
+
+<div class="bg-[#FFF8F2] p-10 rounded-[30px] shadow-lg text-center hover:-translate-y-3 duration-300">
+
+<div class="text-6xl mb-5">
+🌸
+</div>
+
+<h3 class="text-2xl font-bold text-[#4B2E1F]">
+
+Blooming Experience
+
+</h3>
+
+<p class="mt-4 text-gray-600 leading-8">
+
+Relax in a cozy floral atmosphere designed to make every visit memorable.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Gallery -->
+
+<<section id="gallery" class="py-24 bg-[#FFF8F2]">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<p class="text-center uppercase tracking-[4px] text-pink-500 font-semibold">
+Gallery
+</p>
+
+<h2 class="hero-title text-5xl font-bold text-center text-[#4B2E1F] mt-3">
+
+Moments at Blooming Coffee
+
+</h2>
+
+<p class="text-center text-gray-500 mt-4 mb-14">
+
+A glimpse of our cozy café, handcrafted drinks, and blooming atmosphere.
+
+</p>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<img src="images/gallery1.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+<img src="images/gallery2.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+<img src="images/gallery3.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+<img src="images/gallery4.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+<img src="images/gallery5.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+<img src="images/gallery6.jpg" class="rounded-[25px] shadow-lg h-80 w-full object-cover hover:scale-105 duration-300">
+
+</div>
+
+</div>
+
+</section>
+<!-- Testimonials -->
+
+<section class="py-24 bg-white">
+
+<div class="max-w-7xl mx-auto px-8">
+
+<p class="text-center uppercase tracking-[4px] text-pink-500 font-semibold">
+Testimonials
+</p>
+
+<h2 class="hero-title text-5xl font-bold text-center text-[#4B2E1F] mt-3">
+
+What Our Customers Say
+
+</h2>
+
+<p class="text-center text-gray-500 mt-4 mb-14">
+
+Loved by coffee lovers every single day.
+
+</p>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-[#FFF8F2] p-8 rounded-[25px] shadow-lg">
+
+<div class="text-yellow-500 text-xl mb-4">★★★★★</div>
+
+<p class="text-gray-600 italic">
+"The Rose Latte was amazing! The atmosphere is peaceful and beautiful."
+</p>
+
+<h3 class="mt-6 font-bold text-[#4B2E1F]">
+Sarah Ahmed
+</h3>
+
+</div>
+
+<div class="bg-[#FFF8F2] p-8 rounded-[25px] shadow-lg">
+
+<div class="text-yellow-500 text-xl mb-4">★★★★★</div>
+
+<p class="text-gray-600 italic">
+"One of the best coffee experiences I've ever had. Highly recommended!"
+</p>
+
+<h3 class="mt-6 font-bold text-[#4B2E1F]">
+Ali Khan
+</h3>
+
+</div>
+
+<div class="bg-[#FFF8F2] p-8 rounded-[25px] shadow-lg">
+
+<div class="text-yellow-500 text-xl mb-4">★★★★★</div>
+
+<p class="text-gray-600 italic">
+"A perfect place for coffee lovers. The floral theme is so relaxing."
+</p>
+
+<h3 class="mt-6 font-bold text-[#4B2E1F]">
+Ayesha Noor
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Contact -->
+
+<section id="contact" class="py-24 bg-[#FFF8F2]">
+
+<div class="max-w-5xl mx-auto text-center px-8">
+
+<h2 class="hero-title text-5xl font-bold text-[#4B2E1F]">
+
+Visit Blooming Coffee
+
+</h2>
+
+<p class="text-gray-600 mt-6">
+
+📍 Main Boulevard, Lahore, Pakistan
+
+</p>
+
+<p class="text-gray-600 mt-3">
+
+📞 +92 300 1234567
+
+</p>
+
+<p class="text-gray-600 mt-3">
+
+✉ hello@bloomingcoffee.com
+
+</p>
+
+<a href="#"
+
+class="inline-block mt-10 bg-[#6F4E37] text-white px-10 py-4 rounded-full hover:bg-[#8A6048] duration-300">
+
+Book Your Visit
+
+</a>
+
+</div>
+
+</section>
+<footer class="bg-[#4B2E1F] text-white py-8">
+
+<div class="max-w-7xl mx-auto text-center">
+
+<h2 class="hero-title text-3xl">
+
+🌸 Blooming Coffee
+
+</h2>
+
+<p class="mt-4 text-gray-300">
+
+Where Every Sip Blossoms.
+
+</p>
+
+<p class="mt-6 text-sm text-gray-400">
+
+© 2025 Blooming Coffee. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+<!-- Order Popup -->
+
+<div id="popup" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+
+<div class="bg-white p-8 rounded-3xl w-[90%] max-w-md">
+
+<h2 class="text-3xl font-bold text-center text-[#4B2E1F] mb-6">
+
+☕ Order Coffee
+
+</h2>
+
+<input
+type="text"
+placeholder="Your Name"
+class="w-full border p-3 rounded-xl mb-4">
+
+<input
+id="coffeeName"
+type="text"
+readonly
+class="w-full border p-3 rounded-xl mb-4 bg-gray-100">
+
+<input
+id="quantity"
+type="number"
+value="1"
+min="1"
+oninput="calculateTotal()"
+class="w-full border p-3 rounded-xl mb-4">
+
+<p class="text-lg font-semibold text-[#4B2E1F] mb-4">
+Total: <span id="totalPrice">Rs. 850</span>
+</p>
+
+<input
+type="text"
+placeholder="Phone Number"
+class="w-full border p-3 rounded-xl mb-6">
+
+<div class="flex gap-4">
+
+<button onclick="placeOrder()"
+class="flex-1 bg-[#6F4E37] text-white py-3 rounded-xl">
+
+Place Order
+
+</button>
+
+<button onclick="closePopup()"
+class="flex-1 bg-gray-300 py-3 rounded-xl">
+
+Cancel
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<script>
+
+let coffeePrice = 0;
+
+function openPopup(coffee){
+
+    document.getElementById("popup").classList.remove("hidden");
+    document.getElementById("popup").classList.add("flex");
+
+    document.getElementById("coffeeName").value = coffee;
+
+    if(coffee=="Rose Latte"){
+        coffeePrice=850;
+    }
+    else if(coffee=="Lavender Cappuccino"){
+        coffeePrice=950;
+    }
+    else if(coffee=="Floral Mocha"){
+        coffeePrice=1100;
+    }
+
+    document.getElementById("quantity").value=1;
+
+    calculateTotal();
+
+}
+
+function calculateTotal(){
+
+    let qty=document.getElementById("quantity").value;
+
+    let total=coffeePrice*qty;
+
+    document.getElementById("totalPrice").innerHTML="Rs. "+total;
+
+}
+
+function closePopup(){
+
+    document.getElementById("popup").classList.remove("flex");
+    document.getElementById("popup").classList.add("hidden");
+
+}
+
+function placeOrder(){
+
+    let name=document.querySelector("input[placeholder='Your Name']").value;
+
+    let coffee=document.getElementById("coffeeName").value;
+
+    let qty=document.getElementById("quantity").value;
+
+    let total=coffeePrice*qty;
+
+    alert(
+"🌸 Thank You " + name +
+"\n\nCoffee: " + coffee +
+"\nQuantity: " + qty +
+"\nTotal: Rs. " + total +
+"\n\nYour order has been placed successfully!"
+);
+
+    closePopup();
+
+}
+
+</script>
